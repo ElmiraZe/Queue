@@ -1,0 +1,4 @@
+def get_smth (self, x):
+    if x < 0 or x >= self.num:
+        raise Exception("null input")
+    return self.Q[(self.first + x) % self.max_size]
